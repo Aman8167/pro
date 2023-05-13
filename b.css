@@ -1,0 +1,104 @@
+.form{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:30vh;
+    flex-direction: column;
+    margin-left:136px;
+    gap:30px;
+    height:700px;
+    margin-top:37px;
+    margin-left:-25px;
+}
+.inputBox{
+    position:relative;
+    width:260px;
+    height:67px;
+
+}
+.inputBox input{
+    width:100%;
+    padding:10px;
+    border:2px solid white;
+    background-color:silver;
+    border-radius: 5px;
+    outline:none ;
+    color:#fff;
+    font-size:1em;
+    transition: 0.5s;
+
+}
+.inputBox span{
+    position: absolute;
+    left:0;
+    padding:14px;
+    margin-left:3px;
+    pointer-events:  none;
+    font-size: 1em;
+    color:rgba(255,255,255,0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
+
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span
+{
+    color:blue;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0.10px;
+    background-color: silver;
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+    letter-spacing: 0.2em;
+
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span
+{
+    border:1px solid silver;
+
+}
+
+.boxes{
+    position:relative;
+    width:260px;
+    height:67px;
+
+}
+.boxes input{
+    width:100%;
+    padding:10px;
+    border:2px solid white;
+    background-color:silver;
+    border-radius: 5px;
+    outline:none ;
+    color:#fff;
+    font-size:1em;
+
+}
+.boxes span{
+    position:absolute;
+    left:0;
+    padding:10px;
+    pointer-events: none;
+    font-size:1em;
+    color:rgba(255,255,255,0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.boxes input:valid~span,
+.boxes input:focus~span
+{
+
+    color:blue;
+    transform:translatex(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background-color:silver ;
+    letter-spacing: 0.2em;
+    border-left: blue;
+    
+
+
+}
